@@ -1,5 +1,6 @@
 <script setup>
 import CardList from '../components/CardList.vue';
+import Slider from '../components/Slider.vue';
 import axios from 'axios';
 import { inject, reactive, watch, ref, onMounted } from 'vue';
 
@@ -108,6 +109,11 @@ watch(cart, () => {
 </script>
 
 <template>
+
+  <div class="m-5 mb-10">
+    <Slider :items="items"/>
+  </div>
+
     <div class="flex justify-between items-center">
         <h2 class="text-3xl font-bold mb-8">The sneakers</h2>
 
